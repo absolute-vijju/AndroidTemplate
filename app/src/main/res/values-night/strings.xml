@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="increment_count_by_one">Increment count by one</string>
+    <string name="day_night_theme_image">Day Night Theme Image</string>
+</resources>
