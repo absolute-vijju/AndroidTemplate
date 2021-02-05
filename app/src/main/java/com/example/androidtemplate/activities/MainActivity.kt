@@ -1,8 +1,7 @@
-package com.example.androidtemplate.view.ui
+package com.example.androidtemplate.activities
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import androidx.appcompat.app.AppCompatDelegate
 import androidx.lifecycle.Observer
 import com.example.androidtemplate.R
@@ -12,8 +11,6 @@ import com.example.androidtemplate.util.Constants
 import com.example.androidtemplate.util.Preference
 import com.example.androidtemplate.util.showShortToast
 import com.example.androidtemplate.viewmodel.TestViewModel
-import com.google.gson.Gson
-import timber.log.Timber
 
 class MainActivity : AppCompatActivity() {
 

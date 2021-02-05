@@ -3,6 +3,7 @@
     package="com.example.androidtemplate">
 
     <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:name=".util.MyApp"
         android:allowBackup="true"
@@ -11,13 +12,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidTemplate">
-        <activity android:name=".view.ui.MainActivity">
+        <activity
+            android:name=".activities.HomeActivity"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".activities.MainActivity"
+            android:screenOrientation="portrait" />
     </application>
 
 </manifest>

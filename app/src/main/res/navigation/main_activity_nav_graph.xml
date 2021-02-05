@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/viewModelFragment"
-        android:name="com.example.androidtemplate.view.ui.ViewModelFragment"
+        android:name="com.example.androidtemplate.activities.fragments.ViewModelFragment"
         android:label="fragment_view_model"
         tools:layout="@layout/fragment_view_model" />
 </navigation>
