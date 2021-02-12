@@ -10,8 +10,8 @@
         android:id="@+id/header"
         layout="@layout/item_header" />
 
-  <!--  <fragment
-        android:id="@+id/fragment"
+    <fragment
+        android:id="@+id/navHostFragment"
         android:name="androidx.navigation.fragment.NavHostFragment"
         android:layout_width="0dp"
         android:layout_height="0dp"
@@ -20,6 +20,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/header"
-        app:navGraph="@navigation/graph_home_activity" />-->
+        app:navGraph="@navigation/graph_home_activity" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

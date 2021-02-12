@@ -28,31 +28,6 @@ class MainActivity : AppCompatActivity() {
         testViewModel.response.observe(this, Observer {
             showShortToast("Got response")
         })
-
-        checkTheme()
-        activityMainBinding.header.ivTheme.setOnClickListener {
-            changeTheme()
-        }
-
     }
-
-    private fun checkTheme() {
-        if (Preference.getBooleanData(this, Constants.IS_NIGHT_THEME)) {
-            AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
-            activityMainBinding.header.ivTheme.setImageResource(R.drawable.ic_light_mode)
-        } else {
-            AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
-            activityMainBinding.header.ivTheme.setImageResource(R.drawable.ic_dark_mode)
-        }
-    }
-
-    private fun changeTheme() {
-        if (Preference.getBooleanData(this, Constants.IS_NIGHT_THEME))
-            Preference.putData(this, Constants.IS_NIGHT_THEME, false)
-        else
-            Preference.putData(this, Constants.IS_NIGHT_THEME, true)
-        checkTheme()
-    }
-
 
 }

@@ -12,6 +12,9 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
+        <item name="fontFamily">@font/montserrat_regular</item>
+        <item name="android:textSize">@dimen/sp_13</item>
+        <item name="drawableTint">@color/white</item>
     </style>
 
     <style name="MontserratBold">
@@ -24,6 +27,15 @@
 
     <style name="MontserratRegular">
         <item name="fontFamily">@font/montserrat_regular</item>
+    </style>
+
+    <style name="BackgroundWithTextColorTextView">
+        <item name="android:background">@color/black</item>
+        <item name="android:textColor">@color/white_80</item>
+    </style>
+
+    <style name="TextColorButton">
+        <item name="android:textColor">@color/white_80</item>
     </style>
 
 </resources>

@@ -2,4 +2,5 @@
 <resources>
     <dimen name="sp_15">15sp</dimen>
     <dimen name="sp_20">20sp</dimen>
+    <dimen name="dp_4">4dp</dimen>
 </resources>

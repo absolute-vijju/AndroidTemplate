@@ -4,7 +4,169 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragments.HomeFragment">
+    tools:context="com.example.androidtemplate.fragments.home_fragment.HomeFragment">
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/shimmerLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include layout="@layout/item_home" />
+
+            <include layout="@layout/item_home" />
+
+            <include layout="@layout/item_home" />
+
+            <include layout="@layout/item_home" />
+
+            <include layout="@layout/item_home" />
+
+            <include layout="@layout/item_home" />
+
+            <include layout="@layout/item_home" />
+
+            <include layout="@layout/item_home" />
+
+            <include layout="@layout/item_home" />
+
+            <include layout="@layout/item_home" />
+
+            <include layout="@layout/item_home" />
+
+            <include layout="@layout/item_home" />
+
+            <include layout="@layout/item_home" />
+
+            <include layout="@layout/item_home" />
+
+            <include layout="@layout/item_home" />
+
+            <include layout="@layout/item_home" />
+
+            <include layout="@layout/item_home" />
+
+            <include layout="@layout/item_home" />
+
+            <include layout="@layout/item_home" />
+
+            <include layout="@layout/item_home" />
+
+            <include layout="@layout/item_home" />
+
+            <include layout="@layout/item_home" />
+
+            <include layout="@layout/item_home" />
+
+            <include layout="@layout/item_home" />
+
+            <include layout="@layout/item_home" />
+
+            <include layout="@layout/item_home" />
+
+            <include layout="@layout/item_home" />
+
+            <include layout="@layout/item_home" />
+
+            <include layout="@layout/item_home" />
+
+            <include layout="@layout/item_home" />
+
+            <include layout="@layout/item_home" />
+
+            <include layout="@layout/item_home" />
+
+            <include layout="@layout/item_home" />
+
+            <include layout="@layout/item_home" />
+
+            <include layout="@layout/item_home" />
+
+            <include layout="@layout/item_home" />
+
+            <include layout="@layout/item_home" />
+
+            <include layout="@layout/item_home" />
+
+            <include layout="@layout/item_home" />
+
+            <include layout="@layout/item_home" />
+
+            <include layout="@layout/item_home" />
+
+            <include layout="@layout/item_home" />
+
+            <include layout="@layout/item_home" />
+
+            <include layout="@layout/item_home" />
+
+            <include layout="@layout/item_home" />
+
+            <include layout="@layout/item_home" />
+
+            <include layout="@layout/item_home" />
+
+            <include layout="@layout/item_home" />
+
+            <include layout="@layout/item_home" />
+
+            <include layout="@layout/item_home" />
+
+            <include layout="@layout/item_home" />
+
+            <include layout="@layout/item_home" />
+
+            <include layout="@layout/item_home" />
+
+            <include layout="@layout/item_home" />
+
+            <include layout="@layout/item_home" />
+
+            <include layout="@layout/item_home" />
+
+            <include layout="@layout/item_home" />
+
+            <include layout="@layout/item_home" />
+
+            <include layout="@layout/item_home" />
+
+            <include layout="@layout/item_home" />
+
+            <include layout="@layout/item_home" />
+
+            <include layout="@layout/item_home" />
+
+            <include layout="@layout/item_home" />
+
+            <include layout="@layout/item_home" />
+
+            <include layout="@layout/item_home" />
+
+            <include layout="@layout/item_home" />
+
+            <include layout="@layout/item_home" />
+
+            <include layout="@layout/item_home" />
+
+            <include layout="@layout/item_home" />
+
+            <include layout="@layout/item_home" />
+
+            <include layout="@layout/item_home" />
+
+            <include layout="@layout/item_home" />
+
+        </LinearLayout>
+
+    </com.facebook.shimmer.ShimmerFrameLayout>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvHome"

@@ -1,7 +1,5 @@
 package com.example.androidtemplate.util
 
-import android.app.Activity
-import android.content.Context
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 

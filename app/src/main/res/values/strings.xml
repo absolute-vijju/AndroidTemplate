@@ -4,4 +4,19 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="day_night_theme_image">Day Night Theme Image</string>
+    <string name="enter_package_name">Enter package name</string>
+    <string name="check">Check</string>
+    <string name="com_whatsapp">com.whatsapp</string>
+    <string name="installed">Installed</string>
+    <string name="not_installed">Not installed</string>
+    <string name="pick_start_date">Pick start date</string>
+    <string name="pick_end_date">Pick end date</string>
+    <string name="check_app_availability">Check app availability</string>
+    <string name="calender_range">Calender range</string>
+    <string name="start_date">Start Date</string>
+    <string name="end_date">End Date</string>
+    <string name="start_date_can_t_bigger_than_end_date">Start date can\'t bigger than end date</string>
+    <string name="both_date_can_t_be_same">Both date can\'t be same</string>
+    <string name="submit">Submit</string>
+    <string name="success">Success</string>
 </resources>
