@@ -1,17 +1,12 @@
-package com.example.androidtemplate.view.ui
+package com.example.androidtemplate.fragments
 
-import android.app.Activity
-import android.content.Context
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
-import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
-import com.example.androidtemplate.R
 import com.example.androidtemplate.databinding.FragmentViewModelBinding
 import com.example.androidtemplate.viewmodel.ViewModelFragmentViewModel
 
