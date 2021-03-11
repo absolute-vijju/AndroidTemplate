@@ -47,13 +47,15 @@ class HomeFragment : BaseFragment() {
         manageShimmer(true)
         mBinding.rvHome.layoutManager = LinearLayoutManager(mContext)
         homeAdapter = HomeAdapter(mContext, arrayListOf(), object : ItemClickListener {
-            override fun onItemClicked(viewHolder: RecyclerView.ViewHolder, viewId: Int?) {
+            override fun onItemClicked(viewHolder: RecyclerView.ViewHolder,position:Int, viewId: Int?) {
                 viewId?.let {
                     when (it) {
                         0 -> view?.findNavController()
                             ?.navigate(R.id.action_homeFragment_to_checkAppInstalledFragment)
-                        else -> view?.findNavController()
+                        1 -> view?.findNavController()
                             ?.navigate(R.id.action_homeFragment_to_calenderRangeFragment)
+                        else -> view?.findNavController()
+                            ?.navigate(R.id.action_homeFragment_to_roomDashboardFragment)
                     }
 
                 }

@@ -37,5 +37,4 @@
     <style name="TextColorButton">
         <item name="android:textColor">@color/white_80</item>
     </style>
-
 </resources>

@@ -39,7 +39,7 @@ class HomeAdapter(
             mBinding.tvDemoTitle.text = dashboardList[adapterPosition]
 
             mBinding.root.setOnClickListener {
-                itemClickListener.onItemClicked(this, adapterPosition)
+                itemClickListener.onItemClicked(this, adapterPosition, adapterPosition)
             }
         }
     }

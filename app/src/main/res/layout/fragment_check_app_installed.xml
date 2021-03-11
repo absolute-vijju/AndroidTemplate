@@ -15,21 +15,19 @@
 
         <TextView
             android:id="@+id/tvEnterPackageName"
+            style="@style/LabelStyle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/enter_package_name"
-            android:textAlignment="center"
-            android:textSize="@dimen/sp_15"
-            android:transitionName="@string/app_name"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <EditText
             android:id="@+id/etPackageName"
+            style="@style/EditTextStyle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/dp_10"
             android:inputType="text"
             android:text="@string/com_whatsapp"
             app:layout_constraintEnd_toEndOf="@+id/tvEnterPackageName"
@@ -38,20 +36,19 @@
 
         <Button
             android:id="@+id/btnCheck"
+            style="@style/ButtonStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/dp_10"
             android:text="@string/check"
-            android:textAllCaps="false"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/etPackageName" />
 
         <TextView
             android:id="@+id/tvStatus"
+            style="@style/LabelStyle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/dp_12"
             android:textAlignment="center"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"

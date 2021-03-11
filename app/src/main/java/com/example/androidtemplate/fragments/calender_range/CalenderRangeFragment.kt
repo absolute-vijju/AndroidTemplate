@@ -118,21 +118,23 @@ class CalenderRangeFragment : BaseFragment(), View.OnClickListener {
 
         if (daysDifference > 0) {
             for (i in 0..daysDifference) {
-                calendar.time = Date()
+                calendar.time = startDate.time
                 calendar.add(Calendar.DATE, i)
 //                calendar.add(Calendar.DATE, -abs(i))  // Use this if you want to decrease days
                 daysList.add(DateModel(calendar.clone() as Calendar, null, null))
             }
         }
 
-        /*for (i in daysList) {
+        for (i in daysList) {
             Log.d("daysList", GeneralFunctions.formatDate(i.date!!.time))
-        }*/
+        }
+
+        dayAdapter.changeAdapterData(daysList, Constants.Companion.CalenderAdapterType.DAY)
 
         if (daysDifference >= 7) {
             val weeks = daysDifference / 7
-            for (i in 0 until weeks) {
-                calendar.time = Date()
+            for (i in 0..weeks) {
+                calendar.time = startDate.time
                 calendar.add(Calendar.DATE, i * 7)
 
                 calendar.firstDayOfWeek = Calendar.SUNDAY
@@ -149,16 +151,30 @@ class CalenderRangeFragment : BaseFragment(), View.OnClickListener {
 
         for (i in weekList) {
             Log.d(
-                "daysList",
+                "weekList",
                 "Start date: " + GeneralFunctions.formatDate(i.startDate!!.time) + " End Date: " + GeneralFunctions.formatDate(
                     i.endDate!!.time
                 )
             )
         }
 
-        if (daysDifference > 31) {
+        weekAdapter.changeAdapterData(weekList, Constants.Companion.CalenderAdapterType.WEEK)
 
+        if (daysDifference > 28) {
+            val months = daysDifference / 28
+            for (i in 1..months) {
+                calendar.time = startDate.time
+                calendar.add(Calendar.MONTH, i - 1)
+
+                monthList.add(DateModel(calendar.clone() as Calendar, null, null))
+            }
         }
+
+        for (i in monthList) {
+            Log.d("monthList", GeneralFunctions.formatDate(i.date!!.time))
+        }
+
+        monthAdapter.changeAdapterData(monthList, Constants.Companion.CalenderAdapterType.MONTH)
     }
 
     private fun checkDate(): Boolean {

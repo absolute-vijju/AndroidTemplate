@@ -68,7 +68,7 @@ class CalenderAdapter(
                                     }
                                 )
                         }
-                } else if (calenderAdapterType == Constants.Companion.CalenderAdapterType.DAY) {
+                } else if (calenderAdapterType == Constants.Companion.CalenderAdapterType.MONTH) {
                     /*if (adapterPosition == 0)
                         mBinding.tvDate.text = context.getString(R.string.start_date)
                     else*/
