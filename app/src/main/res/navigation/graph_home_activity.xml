@@ -34,6 +34,14 @@
             app:launchSingleTop="true"
             app:popEnterAnim="@anim/slide_in_left"
             app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_homeFragment_to_coilFragment"
+            app:destination="@id/coilFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:launchSingleTop="true"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
     </fragment>
     <fragment
         android:id="@+id/checkAppInstalledFragment"
@@ -49,4 +57,9 @@
         android:name="com.example.androidtemplate.fragments.room_database.RoomDashboardFragment"
         android:label="RoomDashboardFragment"
         tools:layout="@layout/fragment_room_dashboard" />
+    <fragment
+        android:id="@+id/coilFragment"
+        android:name="com.example.androidtemplate.fragments.coil_image_loader.CoilFragment"
+        android:label="CoilFragment"
+        tools:layout="@layout/fragment_coil" />
 </navigation>

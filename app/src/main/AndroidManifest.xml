@@ -3,7 +3,6 @@
     package="com.example.androidtemplate">
 
     <uses-permission android:name="android.permission.INTERNET" />
-
     <application
         android:name=".util.MyApp"
         android:allowBackup="true"

@@ -54,8 +54,10 @@ class HomeFragment : BaseFragment() {
                             ?.navigate(R.id.action_homeFragment_to_checkAppInstalledFragment)
                         1 -> view?.findNavController()
                             ?.navigate(R.id.action_homeFragment_to_calenderRangeFragment)
-                        else -> view?.findNavController()
+                        2 -> view?.findNavController()
                             ?.navigate(R.id.action_homeFragment_to_roomDashboardFragment)
+                        else -> view?.findNavController()
+                            ?.navigate(R.id.action_homeFragment_to_coilFragment)
                     }
 
                 }
