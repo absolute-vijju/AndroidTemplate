@@ -3,12 +3,9 @@ package com.example.androidtemplate.fragments.home_fragment
 import android.app.Activity
 import android.content.Context
 import android.os.Bundle
-import android.os.Handler
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -17,12 +14,9 @@ import com.example.androidtemplate.databinding.FragmentHomeBinding
 import com.example.androidtemplate.util.BaseFragment
 import com.example.androidtemplate.util.GeneralFunctions
 import com.example.androidtemplate.util.ItemClickListener
-import com.example.androidtemplate.util.showShortToast
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
 import kotlinx.coroutines.*
-import timber.log.Timber
-import kotlin.random.Random
 
 class HomeFragment : BaseFragment() {
 
@@ -56,8 +50,10 @@ class HomeFragment : BaseFragment() {
                             ?.navigate(R.id.action_homeFragment_to_calenderRangeFragment)
                         2 -> view?.findNavController()
                             ?.navigate(R.id.action_homeFragment_to_roomDashboardFragment)
-                        else -> view?.findNavController()
+                        3 -> view?.findNavController()
                             ?.navigate(R.id.action_homeFragment_to_coilFragment)
+                        else -> view?.findNavController()
+                            ?.navigate(R.id.action_homeFragment_to_getServerDataFragment)
                     }
 
                 }

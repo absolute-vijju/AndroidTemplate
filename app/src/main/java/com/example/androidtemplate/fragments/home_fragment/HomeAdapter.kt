@@ -35,7 +35,7 @@ class HomeAdapter(
     inner class HomeViewHolder(private val mBinding: ItemHomeBinding) :
         RecyclerView.ViewHolder(mBinding.root) {
         fun bindData() {
-            mBinding.root.animation = GeneralFunctions.slideInBottomAnimation(context)
+            mBinding.root.animation = GeneralFunctions.provideAnimation(context, R.anim.fall_down)
             mBinding.tvDemoTitle.text = dashboardList[adapterPosition]
 
             mBinding.root.setOnClickListener {

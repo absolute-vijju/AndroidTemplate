@@ -8,4 +8,10 @@
     <string name="update">Update</string>
     <string name="user_added">User added</string>
     <string name="user_updated">User updated</string>
+    <string name="room_dabase">Room database</string>
+    <string name="coil_image_loading">Coil image loading</string>
+    <string name="get_data_from_server">Get data from server</string>
+    <string name="please_make_sure_your_wifi_or_mobile_data_have_internet_connection">Please make sure your Wifi or mobile data have internet connection.</string>
+    <string name="no_network_available">No network available!</string>
+    <string name="no_internet_connection">No Internet Connection</string>
 </resources>

@@ -1,17 +1,31 @@
 package com.example.androidtemplate.util
 
+import android.app.Activity
+import android.app.AlertDialog
 import android.app.DatePickerDialog
 import android.content.Context
+import android.content.DialogInterface
+import android.content.Intent
 import android.content.pm.PackageManager
+import android.net.ConnectivityManager
+import android.provider.Settings
+import android.util.Log
+import android.view.WindowManager
 import android.view.animation.Animation
 import android.view.animation.AnimationUtils
-import android.widget.DatePicker
 import com.example.androidtemplate.R
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
+import kotlinx.coroutines.withContext
 import java.io.IOException
 import java.io.InputStream
+import java.net.HttpURLConnection
+import java.net.URL
 import java.nio.charset.Charset
 import java.text.SimpleDateFormat
 import java.util.*
+
 
 object GeneralFunctions {
     fun isAppInstalled(context: Context, packageName: String): Boolean {
@@ -40,9 +54,9 @@ object GeneralFunctions {
         return json
     }
 
-    fun slideInBottomAnimation(context: Context): Animation {
-        return AnimationUtils.loadAnimation(context, R.anim.slide_in_bottom).apply {
-            duration = 300
+    fun provideAnimation(context: Context, animationId: Int): Animation {
+        return AnimationUtils.loadAnimation(context, animationId).apply {
+            duration = 400
         }
     }
 
@@ -83,4 +97,60 @@ object GeneralFunctions {
         return SimpleDateFormat(format).format(date)
     }
 
+    fun disableScreenShot(activity: Activity) {
+        activity.window.setFlags(
+            WindowManager.LayoutParams.FLAG_SECURE,
+            WindowManager.LayoutParams.FLAG_SECURE
+        )
+    }
+
+    private fun hasNetworkAvailable(context: Context): Boolean {
+        val service = Context.CONNECTIVITY_SERVICE
+        val manager = context.getSystemService(service) as ConnectivityManager?
+        val network = manager?.activeNetworkInfo
+        return (network != null)
+    }
+
+    fun hasInternetConnected(context: Context): Boolean {
+        var status = false
+        if (hasNetworkAvailable(context)) {
+            CoroutineScope(Dispatchers.IO).launch {
+                val connection =
+                    URL("https://www.google.com").openConnection() as HttpURLConnection
+                try {
+                    connection.setRequestProperty("User-Agent", "ConnectionTest")
+                    connection.setRequestProperty("Connection", "close")
+                    connection.connectTimeout = 2000
+                    connection.connect()
+                    if (connection.responseCode == 200)
+                        status = true
+                } catch (e: IOException) {
+                    withContext(Dispatchers.Main) {
+                        showNetworkError(
+                            context,
+                            context.getString(R.string.please_make_sure_your_wifi_or_mobile_data_have_internet_connection)
+                        )
+                    }
+                } finally {
+                    connection.disconnect()
+                }
+            }
+        } else {
+            showNetworkError(context, context.getString(R.string.no_network_available))
+        }
+        return status
+    }
+
+
+    private fun showNetworkError(context: Context, message: String) {
+        AlertDialog.Builder(context, android.R.style.Theme_Material_Light_Dialog_Alert)
+            .setTitle(context.getString(R.string.no_internet_connection))
+            .setMessage(message)
+            .setCancelable(false)
+            .setPositiveButton("Ok") { dialog, which ->
+                dialog.dismiss()
+                context.startActivity(Intent(Settings.ACTION_WIRELESS_SETTINGS))
+            }
+            .show()
+    }
 }

@@ -14,11 +14,13 @@ import com.example.androidtemplate.util.Preference
 import com.example.androidtemplate.util.showShortToast
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
+import dagger.hilt.android.AndroidEntryPoint
 import timber.log.Timber
 import java.io.IOException
 import java.io.InputStream
 import java.nio.charset.Charset
 
+@AndroidEntryPoint      // For Hilt
 class HomeActivity : BaseActivity() {
 
     private lateinit var mBinding: ActivityHomeBinding
@@ -30,11 +32,7 @@ class HomeActivity : BaseActivity() {
 
         val navController = findNavController(R.id.navHostFragment)
         navController?.addOnDestinationChangedListener { controller, destination, arguments ->
-            when (destination.id) {
-                R.id.homeFragment -> mBinding.header.tvTitle.text = getString(R.string.app_name)
-                R.id.checkAppInstalledFragment -> mBinding.header.tvTitle.text = getString(R.string.check_app_availability)
-                R.id.calenderRangeFragment -> mBinding.header.tvTitle.text = getString(R.string.calender_range)
-            }
+            mBinding.header.tvTitle.text = destination.label
         }
 
         checkTheme()

@@ -1,11 +1,11 @@
-package com.example.androidtemplate.model.response
+package com.example.androidtemplate.fragments.get_data_from_server
 
 import com.google.gson.annotations.SerializedName
 
 import com.google.gson.annotations.Expose
 
 
-data class TestResponse(
+data class UsersResponse(
     @Expose
     @SerializedName("body")
     var body: String = "",
