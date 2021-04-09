@@ -45,8 +45,8 @@ android {
         }
     }
 
-    viewBinding {
-        enabled = true
+    buildFeatures {
+        viewBinding true
     }
 }
 
@@ -109,5 +109,4 @@ dependencies {
 
     implementation "androidx.hilt:hilt-lifecycle-viewmodel:1.0.0-alpha02"
     kapt "androidx.hilt:hilt-compiler:1.0.0-alpha02"
-
 }

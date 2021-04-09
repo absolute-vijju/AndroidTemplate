@@ -26,11 +26,11 @@ class CoilFragment : BaseFragment() {
     }
 
     override fun init() {
-        mBinding.ivCoil.load("https://images.unsplash.com/photo-1583089892943-e02e5b017b6a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80") {
+        mBinding.ivCoil.load(Constants.IMAGE_URL) {
             crossfade(true)     // crossfade animation
             crossfade(2000)
-            placeholder(R.drawable.ic_placeholder)
-            error(R.drawable.ic__error)
+            placeholder(R.drawable.ic_placeholder)  // replace with your placeholder image
+            error(R.drawable.ic__error)     // when url failed to load, this image will show
             transformations(
                 GrayscaleTransformation(),
                 CircleCropTransformation(),
@@ -39,6 +39,6 @@ class CoilFragment : BaseFragment() {
     }
 
     override fun setListener() {
-
+        //TODO
     }
 }

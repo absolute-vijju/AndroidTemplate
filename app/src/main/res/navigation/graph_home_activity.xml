@@ -50,6 +50,14 @@
             app:launchSingleTop="true"
             app:popEnterAnim="@anim/slide_in_left"
             app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_homeFragment_to_imageZoomFragment"
+            app:destination="@id/imageZoomFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:launchSingleTop="true"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
     </fragment>
 
     <fragment
@@ -81,5 +89,11 @@
         android:name="com.example.androidtemplate.fragments.get_data_from_server.GetServerDataFragment"
         android:label="@string/get_data_from_server"
         tools:layout="@layout/fragment_get_server_data" />
+
+    <fragment
+        android:id="@+id/imageZoomFragment"
+        android:name="com.example.androidtemplate.fragments.image_zoom.ImageZoomFragment"
+        android:label="@string/image_zoom"
+        tools:layout="@layout/fragment_image_zoom" />
 
 </navigation>

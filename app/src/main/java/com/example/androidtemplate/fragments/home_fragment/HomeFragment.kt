@@ -41,7 +41,11 @@ class HomeFragment : BaseFragment() {
         manageShimmer(true)
         mBinding.rvHome.layoutManager = LinearLayoutManager(mContext)
         homeAdapter = HomeAdapter(mContext, arrayListOf(), object : ItemClickListener {
-            override fun onItemClicked(viewHolder: RecyclerView.ViewHolder,position:Int, viewId: Int?) {
+            override fun onItemClicked(
+                viewHolder: RecyclerView.ViewHolder,
+                position: Int,
+                viewId: Int?
+            ) {
                 viewId?.let {
                     when (it) {
                         0 -> view?.findNavController()
@@ -52,8 +56,10 @@ class HomeFragment : BaseFragment() {
                             ?.navigate(R.id.action_homeFragment_to_roomDashboardFragment)
                         3 -> view?.findNavController()
                             ?.navigate(R.id.action_homeFragment_to_coilFragment)
-                        else -> view?.findNavController()
+                        4 -> view?.findNavController()
                             ?.navigate(R.id.action_homeFragment_to_getServerDataFragment)
+                        else -> view?.findNavController()
+                            ?.navigate(R.id.action_homeFragment_to_imageZoomFragment)
                     }
 
                 }

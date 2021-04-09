@@ -38,12 +38,12 @@ class GetServerDataFragment : BaseFragment() {
         userAdapter = UserAdapter(requireContext(), arrayListOf())
         mBinding.rvUsers.adapter = userAdapter
 
-        if (GeneralFunctions.hasInternetConnected(requireContext())) {
+//        if (GeneralFunctions.hasInternetConnected(requireContext())) {
             usersViewModel.callTestApiFromViewModel()
             usersViewModel.response.observe(this, {
                 userAdapter.changeAdapterData(it)
             })
-        }
+//        }
     }
 
     override fun setListener() {

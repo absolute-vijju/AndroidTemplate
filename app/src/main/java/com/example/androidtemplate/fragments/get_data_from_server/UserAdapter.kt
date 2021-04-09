@@ -6,6 +6,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.androidtemplate.R
 import com.example.androidtemplate.databinding.ItemHomeBinding
+import com.example.androidtemplate.util.GeneralFunctions
 
 class UserAdapter(private val context: Context, private var userList: ArrayList<UsersResponse>) : RecyclerView.Adapter<UserAdapter.HomeViewHolder>() {
 
@@ -24,6 +25,7 @@ class UserAdapter(private val context: Context, private var userList: ArrayList<
     inner class HomeViewHolder(private val mBinding: ItemHomeBinding) :
         RecyclerView.ViewHolder(mBinding.root) {
         fun bindData() {
+            mBinding.root.animation = GeneralFunctions.provideAnimation(context, R.anim.fall_down)
             mBinding.tvDemoTitle.text = userList[adapterPosition].title
         }
     }
