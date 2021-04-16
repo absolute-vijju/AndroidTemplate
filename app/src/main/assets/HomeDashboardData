@@ -6,5 +6,6 @@
   "Get Data from Server(Retrofit,MVVM,Dagger Hilt)",
   "Pinch zoom image",
   "Content Provider, Content Resolver & Cursor: Contact CRUD",
-  "(Library) CIRCLE MENU: A simple, elegant UI menu with a circular layout and material design animations"
+  "(Library) CIRCLE MENU: A simple, elegant UI menu with a circular layout and material design animations",
+  "Diff Util"
 ]

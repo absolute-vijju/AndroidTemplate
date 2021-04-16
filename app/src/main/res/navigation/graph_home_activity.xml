@@ -74,6 +74,14 @@
             app:launchSingleTop="true"
             app:popEnterAnim="@anim/slide_in_left"
             app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_homeFragment_to_diffUtilFragment"
+            app:destination="@id/diffUtilFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:launchSingleTop="true"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
     </fragment>
 
     <fragment
@@ -123,5 +131,11 @@
         android:name="com.example.androidtemplate.fragments.circle_menu.CircleMenuFragment"
         android:label="@string/circle_menu"
         tools:layout="@layout/fragment_circle_menu" />
+
+    <fragment
+        android:id="@+id/diffUtilFragment"
+        android:name="com.example.androidtemplate.fragments.diff_util.DiffUtilFragment"
+        android:label="@string/diff_util"
+        tools:layout="@layout/fragment_diff_util" />
 
 </navigation>

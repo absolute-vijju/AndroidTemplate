@@ -22,4 +22,5 @@
     <string name="ok">Ok</string>
     <string name="_cancel">Cancel</string>
     <string name="circle_menu">Circle Menu</string>
+    <string name="add_new_item">Add new item</string>
 </resources>
