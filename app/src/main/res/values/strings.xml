@@ -30,12 +30,29 @@
     <string name="no_network_available">No network available!</string>
     <string name="no_internet_connection">No Internet Connection</string>
     <string name="image_zoom">Image zoom</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="contacts">Contacts</string>
     <string name="enter_mobile_number">Enter mobile number</string>
     <string name="are_you_sure">Are you sure?</string>
     <string name="contact_will_be_deleted">Contact will be deleted</string>
     <string name="ok">Ok</string>
     <string name="_cancel">Cancel</string>
+    <string name="circle_menu">Circle Menu</string>
+
+    <!--    For Circle-Menu-->
+    <array name="icons">
+        <item>@drawable/ic_play</item>
+        <item>@drawable/ic_pause</item>
+        <item>@drawable/ic_add_24</item>
+        <item>@drawable/ic_calendar</item>
+        <item>@drawable/ic_light_mode</item>
+    </array>
+    <array name="colors">
+        <item>@android:color/holo_blue_light</item>
+        <item>@android:color/holo_green_dark</item>
+        <item>@android:color/holo_red_light</item>
+        <item>@android:color/holo_purple</item>
+        <item>@android:color/holo_orange_light</item>
+    </array>
+    <!--    End-->
+
 </resources>

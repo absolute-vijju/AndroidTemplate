@@ -109,4 +109,7 @@ dependencies {
 
     implementation "androidx.hilt:hilt-lifecycle-viewmodel:1.0.0-alpha02"
     kapt "androidx.hilt:hilt-compiler:1.0.0-alpha02"
+
+    // Circle-Menu
+    implementation 'com.ramotion.circlemenu:circle-menu:0.3.2'
 }
