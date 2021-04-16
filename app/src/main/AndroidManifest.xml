@@ -5,7 +5,10 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />       <!--For internet connectivity checking-->
-    <uses-sdk tools:overrideLibrary="com.google.zxing.client.android" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />     <!--For content provider demo-->
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />     <!--For content provider demo-->
+
+
     <application
         android:name=".util.MyApp"
         android:allowBackup="true"

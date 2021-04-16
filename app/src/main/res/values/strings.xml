@@ -30,4 +30,12 @@
     <string name="no_network_available">No network available!</string>
     <string name="no_internet_connection">No Internet Connection</string>
     <string name="image_zoom">Image zoom</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="contacts">Contacts</string>
+    <string name="enter_mobile_number">Enter mobile number</string>
+    <string name="are_you_sure">Are you sure?</string>
+    <string name="contact_will_be_deleted">Contact will be deleted</string>
+    <string name="ok">Ok</string>
+    <string name="_cancel">Cancel</string>
 </resources>

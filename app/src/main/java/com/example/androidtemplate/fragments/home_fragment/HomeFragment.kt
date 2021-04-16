@@ -58,8 +58,10 @@ class HomeFragment : BaseFragment() {
                             ?.navigate(R.id.action_homeFragment_to_coilFragment)
                         4 -> view?.findNavController()
                             ?.navigate(R.id.action_homeFragment_to_getServerDataFragment)
-                        else -> view?.findNavController()
+                        5 -> view?.findNavController()
                             ?.navigate(R.id.action_homeFragment_to_imageZoomFragment)
+                        else -> view?.findNavController()
+                            ?.navigate(R.id.action_homeFragment_to_contactDashboardFragment)
                     }
 
                 }

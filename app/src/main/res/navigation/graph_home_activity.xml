@@ -58,6 +58,14 @@
             app:launchSingleTop="true"
             app:popEnterAnim="@anim/slide_in_left"
             app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_homeFragment_to_contactDashboardFragment"
+            app:destination="@id/contactDashboardFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:launchSingleTop="true"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
     </fragment>
 
     <fragment
@@ -95,5 +103,11 @@
         android:name="com.example.androidtemplate.fragments.image_zoom.ImageZoomFragment"
         android:label="@string/image_zoom"
         tools:layout="@layout/fragment_image_zoom" />
+
+    <fragment
+        android:id="@+id/contactDashboardFragment"
+        android:name="com.example.androidtemplate.fragments.content_provider_resolver_cursor.ContactDashboardFragment"
+        android:label="@string/contacts"
+        tools:layout="@layout/fragment_room_dashboard" />
 
 </navigation>

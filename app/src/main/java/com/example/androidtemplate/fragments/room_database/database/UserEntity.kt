@@ -10,5 +10,7 @@ data class UserEntity(
     @ColumnInfo(name = "user_id")
     var userId: Long,
     @ColumnInfo(name = "fullname")
-    var fullName: String
+    var fullName: String,
+    @ColumnInfo(name = "number")
+    var number: String
 )

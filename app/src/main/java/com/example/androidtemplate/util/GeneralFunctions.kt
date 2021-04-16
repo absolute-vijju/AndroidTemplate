@@ -153,4 +153,69 @@ object GeneralFunctions {
             }
             .show()
     }
+
+    interface DialogListener {
+        fun onPositiveClicked()
+        fun onNegativeClicked()
+        fun onNeutralClicked()
+    }
+
+    fun showAlert(
+        context: Context,
+        title: String,
+        message: String,
+        positiveButtonText: String,
+        negativeButtonText: String,
+        dialogListener: DialogListener
+    ) {
+        androidx.appcompat.app.AlertDialog.Builder(context)
+            .setTitle(title)
+            .setMessage(message)
+            .setPositiveButton(
+                positiveButtonText
+            ) { dialog, which ->
+                dialog.dismiss()
+                dialogListener.onPositiveClicked()
+            }
+            .setNegativeButton(
+                negativeButtonText
+            ) { dialog, which ->
+                dialog.dismiss()
+                dialogListener.onNegativeClicked()
+            }
+            .show()
+    }
+
+    fun showAlert(
+        context: Context,
+        title: String,
+        message: String,
+        positiveButtonText: String,
+        negativeButtonText: String,
+        neutralButtonText: String,
+        dialogListener: DialogListener
+    ) {
+        androidx.appcompat.app.AlertDialog.Builder(context)
+            .setTitle(title)
+            .setMessage(message)
+            .setPositiveButton(
+                positiveButtonText
+            ) { dialog, which ->
+                dialog.dismiss()
+                dialogListener.onPositiveClicked()
+            }
+            .setNegativeButton(
+                negativeButtonText
+            ) { dialog, which ->
+                dialog.dismiss()
+                dialogListener.onNegativeClicked()
+            }
+            .setNeutralButton(
+                neutralButtonText
+            ) { dialog, which ->
+                dialog.dismiss()
+                dialogListener.onNeutralClicked()
+            }
+            .show()
+    }
 }

@@ -4,5 +4,6 @@
   "Jetpack Components: Room Database",
   "Coil: An image loading library for Android backed by Kotlin Coroutines",
   "Get Data from Server(Retrofit,MVVM,Dagger Hilt)",
-  "Pinch zoom image"
+  "Pinch zoom image",
+  "Content Provider, Content Resolver & Cursor: Contact CRUD"
 ]

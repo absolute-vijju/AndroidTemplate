@@ -93,7 +93,8 @@ class RoomDashboardFragment : BaseFragment(), View.OnClickListener, ItemClickLis
                         userDao?.insertUser(
                             UserEntity(
                                 userEntity.userId,
-                                dialogRoomBinding.etFullName.text.toString()
+                                dialogRoomBinding.etFullName.text.toString(),
+                                dialogRoomBinding.etNumber.text.toString()
                             )
                         )
                         withContext(Dispatchers.Main) {
@@ -103,7 +104,8 @@ class RoomDashboardFragment : BaseFragment(), View.OnClickListener, ItemClickLis
                         userDao?.insertUser(
                             UserEntity(
                                 0,
-                                dialogRoomBinding.etFullName.text.toString()
+                                dialogRoomBinding.etFullName.text.toString(),
+                                dialogRoomBinding.etNumber.text.toString()
                             )
                         )
                         withContext(Dispatchers.Main) {
@@ -137,7 +139,7 @@ class RoomDashboardFragment : BaseFragment(), View.OnClickListener, ItemClickLis
             userList?.let { usersList ->
                 stringList.clear()
                 for (userData in usersList) {
-                    stringList.add(userData.fullName)
+                    stringList.add("${userData.fullName}\n${userData.number}")
                 }
                 homeAdapter?.changeAdapterData(stringList)
             }
