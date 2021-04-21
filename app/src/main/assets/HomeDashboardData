@@ -7,5 +7,6 @@
   "Pinch zoom image",
   "Content Provider, Content Resolver & Cursor: Contact CRUD",
   "(Library) CIRCLE MENU: A simple, elegant UI menu with a circular layout and material design animations",
-  "Diff Util"
+  "Diff Util",
+  "XML Parsing"
 ]

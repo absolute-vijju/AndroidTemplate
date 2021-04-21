@@ -1,13 +1,9 @@
 package com.example.androidtemplate.fragments.circle_menu
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.core.content.ContextCompat
-import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.androidtemplate.R
 import com.example.androidtemplate.databinding.FragmentCircleMenuBinding
 import com.example.androidtemplate.util.BaseFragment
 import com.example.androidtemplate.util.showShortToast
@@ -21,7 +17,7 @@ class CircleMenuFragment : BaseFragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         mBinding = FragmentCircleMenuBinding.inflate(inflater)
         return mBinding.root
     }

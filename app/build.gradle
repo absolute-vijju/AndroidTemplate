@@ -66,6 +66,29 @@ dependencies {
     implementation 'androidx.navigation:navigation-ui-ktx:2.3.3'
     def lifecycle_version = "2.2.0"
 
+    // Glide
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+
+    // Timber
+    implementation 'com.jakewharton.timber:timber:4.7.1'
+
+    // Google gson
+    implementation 'com.google.code.gson:gson:2.8.6'
+
+    // Shimmer for loading
+    implementation 'com.facebook.shimmer:shimmer:0.5.0'
+
+    // Room
+    def room_version = "2.2.6"
+    implementation "androidx.room:room-runtime:$room_version"
+    kapt "androidx.room:room-compiler:$room_version"
+
+    // Coil image loading
+    implementation "io.coil-kt:coil:1.1.1"
+
+    // Coroutine
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.4.1'
+
     // ViewModel
     implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version"
 
@@ -79,29 +102,6 @@ dependencies {
     // Okhttp
     implementation 'com.squareup.okhttp3:logging-interceptor:4.9.0'
     implementation 'com.squareup.okhttp3:okhttp:4.9.0'
-
-    // Glide
-    implementation 'com.github.bumptech.glide:glide:4.11.0'
-
-    // Timber
-    implementation 'com.jakewharton.timber:timber:4.7.1'
-
-    // Google gson
-    implementation 'com.google.code.gson:gson:2.8.6'
-
-    // Shimmer for loading
-    implementation 'com.facebook.shimmer:shimmer:0.5.0'
-
-    // Coroutine
-    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.4.1'
-
-    // Room
-    def room_version = "2.2.6"
-    implementation "androidx.room:room-runtime:$room_version"
-    kapt "androidx.room:room-compiler:$room_version"
-
-    // Coil image loading
-    implementation "io.coil-kt:coil:1.1.1"
 
     //Dagger - Hilt
     implementation "com.google.dagger:hilt-android:2.28-alpha"

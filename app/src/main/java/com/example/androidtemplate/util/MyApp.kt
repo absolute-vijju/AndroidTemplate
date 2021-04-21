@@ -1,8 +1,6 @@
 package com.example.androidtemplate.util
 
 import android.app.Application
-import android.util.Log
-import androidx.viewbinding.BuildConfig
 import dagger.hilt.android.HiltAndroidApp
 import timber.log.Timber
 

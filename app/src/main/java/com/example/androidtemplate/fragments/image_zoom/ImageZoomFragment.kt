@@ -8,15 +8,11 @@ import com.example.androidtemplate.databinding.FragmentImageZoomBinding
 import com.example.androidtemplate.util.BaseFragment
 import com.example.androidtemplate.util.Constants
 
-
 class ImageZoomFragment : BaseFragment() {
 
     private lateinit var mBinding: FragmentImageZoomBinding
     private lateinit var scaleGestureDetector: ScaleGestureDetector
-    private var scaleFactor = 1f
-
-    private var xDown = 0f
-    private var yDown = 0f
+    private var mScaleFactor = 1f
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -31,10 +27,10 @@ class ImageZoomFragment : BaseFragment() {
         scaleGestureDetector = ScaleGestureDetector(requireContext(), ScaleListener())
 
         mBinding.ivZoom.load(Constants.IMAGE_URL) {
-            crossfade(true)     // crossfade animation
+            crossfade(true)
             crossfade(2000)
-            placeholder(R.drawable.ic_placeholder)  // replace with your placeholder image
-            error(R.drawable.ic__error)     // when url failed to load, this image will show
+            placeholder(R.drawable.ic_placeholder)
+            error(R.drawable.ic__error)
         }
     }
 
@@ -46,9 +42,9 @@ class ImageZoomFragment : BaseFragment() {
 
     private inner class ScaleListener : ScaleGestureDetector.SimpleOnScaleGestureListener() {
         override fun onScale(detector: ScaleGestureDetector?): Boolean {
-            scaleFactor *= scaleGestureDetector.scaleFactor
-            mBinding.ivZoom.scaleX = scaleFactor
-            mBinding.ivZoom.scaleY = scaleFactor
+            mScaleFactor *= scaleGestureDetector.scaleFactor
+            mBinding.ivZoom.scaleX = mScaleFactor
+            mBinding.ivZoom.scaleY = mScaleFactor
             return true
         }
     }

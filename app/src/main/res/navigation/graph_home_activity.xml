@@ -82,6 +82,14 @@
             app:launchSingleTop="true"
             app:popEnterAnim="@anim/slide_in_left"
             app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_homeFragment_to_xmlParserFragment"
+            app:destination="@id/xmlParserFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:launchSingleTop="true"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
     </fragment>
 
     <fragment
@@ -137,5 +145,11 @@
         android:name="com.example.androidtemplate.fragments.diff_util.DiffUtilFragment"
         android:label="@string/diff_util"
         tools:layout="@layout/fragment_diff_util" />
+
+    <fragment
+        android:id="@+id/xmlParserFragment"
+        android:name="com.example.androidtemplate.fragments.xml_pull_parser.XmlParserFragment"
+        android:label="@string/xml_parsing"
+        tools:layout="@layout/fragment_xml_parser" />
 
 </navigation>

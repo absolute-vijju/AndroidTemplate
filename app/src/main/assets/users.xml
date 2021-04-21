@@ -1,0 +1,55 @@
+<!-- Type1-->
+<!--<users>
+
+    <user>
+        <name>Vijay</name>
+        <number>1111111111</number>
+        <age>21</age>
+    </user>
+
+    <user>
+        <name>Hardik</name>
+        <number>2222222222</number>
+        <age>26</age>
+    </user>
+
+    <user>
+        <name>Vraj</name>
+        <number>3333333333</number>
+        <age>2.5</age>
+    </user>
+
+    <user>
+        <name>Dharmik</name>
+        <number>4444444444</number>
+        <age>21</age>
+    </user>
+
+</users>-->
+<!-- Type1 End-->
+
+<!-- Type2-->
+<users>
+
+    <user name="Vijay">
+        <number value="1111111111" />
+        <age value="21" />
+    </user>
+
+    <user name="Hardik">
+        <number value="2222222222" />
+        <age value="26" />
+    </user>
+
+    <user name="Vraj">
+        <number value="3333333333" />
+        <age value="2.5" />
+    </user>
+
+    <user name="Dharmik">
+        <number value="4444444444" />
+        <age value="21" />
+    </user>
+
+</users>
+<!-- Type2 End-->

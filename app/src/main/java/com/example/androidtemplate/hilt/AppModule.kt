@@ -1,6 +1,5 @@
 package com.example.androidtemplate.hilt
 
-import com.example.androidtemplate.api.ApiClient
 import com.example.androidtemplate.api.WebServices
 import com.example.androidtemplate.fragments.get_data_from_server.UsersRepo
 import com.example.androidtemplate.util.Constants
@@ -25,22 +24,23 @@ object AppModule {
     @Singleton
     @Provides
     fun getService(): WebServices {
-        if (ApiClient.retrofit != null)
-            return ApiClient.retrofit!!.create(WebServices::class.java)
+        var retrofit: Retrofit? = null
+        if (retrofit != null)
+            return retrofit.create(WebServices::class.java)
 
         val okHttpClient =
             OkHttpClient.Builder().addInterceptor(HttpLoggingInterceptor().apply {
                 level = HttpLoggingInterceptor.Level.BODY
             })
-        ApiClient.retrofit = Retrofit.Builder().client(okHttpClient.build())
+        retrofit = Retrofit.Builder().client(okHttpClient.build())
             .baseUrl(Constants.BASE_URL)
             .addConverterFactory(GsonConverterFactory.create())
             .build()
 
-        return ApiClient.retrofit!!.create(WebServices::class.java)
+        return retrofit!!.create(WebServices::class.java)
     }
 
     @Singleton
     @Provides
-    fun provideTestRepo() = UsersRepo()
+    fun provideUserRepo() = UsersRepo()
 }

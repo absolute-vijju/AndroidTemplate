@@ -53,10 +53,13 @@
         <item>@android:color/holo_purple</item>
         <item>@android:color/holo_orange_light</item>
     </array>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!--    End-->
     <string name="add_new_item">Add new item</string>
     <string name="diff_util">Diff Util</string>
-    <!--    End-->
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="xml_parsing">Xml Parsing</string>
+    <string name="parsing_online_data">Parsing Online data</string>
+    <string name="parsing_local_data">Parsing local data</string>
 
 </resources>

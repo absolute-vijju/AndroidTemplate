@@ -23,4 +23,6 @@
     <string name="_cancel">Cancel</string>
     <string name="circle_menu">Circle Menu</string>
     <string name="add_new_item">Add new item</string>
+    <string name="xml_parsing">Xml Parsing</string>
+    <string name="parsing_online_data">Parsing Online data</string>
 </resources>

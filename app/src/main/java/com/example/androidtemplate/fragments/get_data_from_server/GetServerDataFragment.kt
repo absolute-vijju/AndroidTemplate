@@ -9,7 +9,6 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.androidtemplate.api.WebServices
 import com.example.androidtemplate.databinding.FragmentGetServerDataBinding
 import com.example.androidtemplate.util.BaseFragment
-import com.example.androidtemplate.util.GeneralFunctions
 import dagger.hilt.android.AndroidEntryPoint
 import javax.inject.Inject
 
@@ -23,26 +22,25 @@ class GetServerDataFragment : BaseFragment() {
 
     private val usersViewModel: UsersViewModel by viewModels()
 
-    private lateinit var userAdapter: UserAdapter
+    private val userAdapter by lazy { UserAdapter() }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         mBinding = FragmentGetServerDataBinding.inflate(inflater)
         return mBinding.root
     }
 
     override fun init() {
         mBinding.rvUsers.layoutManager = LinearLayoutManager(requireContext())
-        userAdapter = UserAdapter(requireContext(), arrayListOf())
         mBinding.rvUsers.adapter = userAdapter
 
 //        if (GeneralFunctions.hasInternetConnected(requireContext())) {
-            usersViewModel.callTestApiFromViewModel()
-            usersViewModel.response.observe(this, {
-                userAdapter.changeAdapterData(it)
-            })
+        usersViewModel.callApiFromViewModel()
+        usersViewModel.response.observe(this, {
+            userAdapter.changeAdapterData(it)
+        })
 //        }
     }
 
