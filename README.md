@@ -1,7 +1,4 @@
 # AndroidTemplate
 This is Template app includes demo of:
-1. Day-Night mode selection from the toolbar(with sharedpreference)
-2. Check app installed or not using package name
-3. Date adapter from date selection
-4. Room Database with Coroutine
-5. Coil: An image loading library for Android backed by Kotlin Coroutines
+
+![image](https://user-images.githubusercontent.com/53289959/115559312-39695100-a2d1-11eb-9e36-2814e56e58a9.png)
