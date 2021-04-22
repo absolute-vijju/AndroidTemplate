@@ -2,11 +2,12 @@
   "Check apk installed or not",
   "Get Month, Week and Day from start-date and end-date",
   "Jetpack Components: Room Database",
-  "Coil: An image loading library for Android backed by Kotlin Coroutines",
+  "(Library) Coil: An image loading library for Android backed by Kotlin Coroutines",
   "Get Data from Server(Retrofit,MVVM,Dagger Hilt)",
   "Pinch zoom image",
   "Content Provider, Content Resolver & Cursor: Contact CRUD",
   "(Library) CIRCLE MENU: A simple, elegant UI menu with a circular layout and material design animations",
   "Diff Util",
-  "XML Parsing"
+  "XML Parsing",
+  "(Library) Dexter: Simplifies the process of requesting permissions at runtime"
 ]

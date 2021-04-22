@@ -90,6 +90,14 @@
             app:launchSingleTop="true"
             app:popEnterAnim="@anim/slide_in_left"
             app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_homeFragment_to_dexterFragment"
+            app:destination="@id/dexterFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:launchSingleTop="true"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
     </fragment>
 
     <fragment
@@ -151,5 +159,11 @@
         android:name="com.example.androidtemplate.fragments.xml_pull_parser.XmlParserFragment"
         android:label="@string/xml_parsing"
         tools:layout="@layout/fragment_xml_parser" />
+
+    <fragment
+        android:id="@+id/dexterFragment"
+        android:name="com.example.androidtemplate.fragments.dexter.DexterFragment"
+        android:label="@string/dexter_permission"
+        tools:layout="@layout/fragment_dexter" />
 
 </navigation>

@@ -25,4 +25,7 @@
     <string name="add_new_item">Add new item</string>
     <string name="xml_parsing">Xml Parsing</string>
     <string name="parsing_online_data">Parsing Online data</string>
+    <string name="take_single_permission">Take single permission</string>
+    <string name="take_multiple_permission">Take multiple permission</string>
+    <string name="dexter_permission">Dexter runtime permission</string>
 </resources>
