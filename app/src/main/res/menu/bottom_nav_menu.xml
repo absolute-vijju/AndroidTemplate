@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/mFunctionalities"
+        android:icon="@drawable/ic_funtionalities"
+        android:title="@string/functionalities" />
+
+    <item
+        android:id="@+id/mUiUx"
+        android:icon="@drawable/ic_views"
+        android:title="@string/ui_ux" />
+
+</menu>

@@ -29,4 +29,8 @@
     <string name="take_multiple_permission">Take multiple permission</string>
     <string name="dexter_permission">Dexter runtime permission</string>
     <string name="custom_views">Custom views</string>
+    <string name="useful_views">Useful views</string>
+    <string name="functionalities">Functionalities</string>
+    <string name="views">Views</string>
+    <string name="ui_ux">UI/UX</string>
 </resources>

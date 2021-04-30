@@ -70,8 +70,10 @@ class HomeFragment : BaseFragment() {
                             ?.navigate(R.id.action_homeFragment_to_xmlParserFragment)
                         10 -> view?.findNavController()
                             ?.navigate(R.id.action_homeFragment_to_dexterFragment)
-                        else -> view?.findNavController()
+                        11 -> view?.findNavController()
                             ?.navigate(R.id.action_homeFragment_to_customViewFragment)
+                        else -> view?.findNavController()
+                            ?.navigate(R.id.action_homeFragment_to_usefulViewsFragment)
                     }
 
                 }
