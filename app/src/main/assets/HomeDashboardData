@@ -9,5 +9,6 @@
   "(Library) CIRCLE MENU: A simple, elegant UI menu with a circular layout and material design animations",
   "Diff Util",
   "XML Parsing",
-  "(Library) Dexter: Simplifies the process of requesting permissions at runtime"
+  "(Library) Dexter: Simplifies the process of requesting permissions at runtime",
+  "Custom views"
 ]

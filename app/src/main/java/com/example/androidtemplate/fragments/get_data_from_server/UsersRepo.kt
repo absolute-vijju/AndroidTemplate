@@ -14,6 +14,7 @@ class UsersRepo() {
         val apiResponse = MutableLiveData<ArrayList<UsersResponse>>()
 
         CoroutineScope(Dispatchers.IO).launch {
+
             val response = webServices.getData()
             if (response.isSuccessful) {
                 withContext(Dispatchers.Main) {
@@ -22,5 +23,11 @@ class UsersRepo() {
             }
         }
         return apiResponse
+    }
+
+    sealed class NetworkState {
+        object Success : NetworkState()
+        data class Error(val message: String) : NetworkState()
+        object Loading : NetworkState()
     }
 }

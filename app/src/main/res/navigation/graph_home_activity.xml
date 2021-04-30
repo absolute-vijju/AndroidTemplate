@@ -98,6 +98,14 @@
             app:launchSingleTop="true"
             app:popEnterAnim="@anim/slide_in_left"
             app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_homeFragment_to_customViewFragment"
+            app:destination="@id/customViewFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:launchSingleTop="true"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
     </fragment>
 
     <fragment
@@ -165,5 +173,11 @@
         android:name="com.example.androidtemplate.fragments.dexter.DexterFragment"
         android:label="@string/dexter_permission"
         tools:layout="@layout/fragment_dexter" />
+
+    <fragment
+        android:id="@+id/customViewFragment"
+        android:name="com.example.androidtemplate.fragments.custom_view.CustomViewFragment"
+        android:label="@string/custom_views"
+        tools:layout="@layout/fragment_custom_view" />
 
 </navigation>

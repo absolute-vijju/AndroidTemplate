@@ -64,5 +64,6 @@
     <string name="take_single_permission">Take single permission</string>
     <string name="take_multiple_permission">Take multiple permission</string>
     <string name="dexter_permission">Dexter runtime permission</string>
+    <string name="custom_views">Custom views</string>
 
 </resources>
