@@ -1,4 +1,3 @@
 # AndroidTemplate
 This is Template app includes demo of:
-
-![image](https://user-images.githubusercontent.com/53289959/115559312-39695100-a2d1-11eb-9e36-2814e56e58a9.png)
+![1619087754936](https://user-images.githubusercontent.com/53289959/115700969-e6e96c80-a384-11eb-9fa3-8eaec328fd05.JPEG)
