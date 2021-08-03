@@ -8,6 +8,7 @@
     <uses-permission android:name="android.permission.WRITE_CONTACTS" />     <!--For content provider demo-->
     <uses-permission android:name="android.permission.CAMERA" />    <!--For Dexter demo-->
     <uses-permission android:name="android.permission.RECORD_AUDIO" />  <!--For Dexter demo-->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
 
     <application

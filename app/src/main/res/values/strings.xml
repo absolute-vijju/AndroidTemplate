@@ -69,5 +69,8 @@
     <string name="functionalities">Functionalities</string>
     <string name="views">Views</string>
     <string name="ui_ux">UI/UX</string>
+    <string name="pick_image">Pick Image</string>
+    <string name="take_permission">Take Permissions</string>
+    <string name="activity_contract">Activity Contract</string>
 
 </resources>

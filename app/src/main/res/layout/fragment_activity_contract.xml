@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/dp_4"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context="com.example.androidtemplate.fragments.activity_contract.ActivityContractFragment">
+
+    <ImageView
+        android:id="@+id/ivProfile"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/ic_placeholder" />
+
+    <Button
+        android:id="@+id/btnPickImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_4"
+        android:text="@string/pick_image"
+        android:textSize="@dimen/sp_10" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvLocationPermissionStatus"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="@dimen/sp_10"
+            tools:text="Location Permission Granted" />
+
+        <Button
+            android:id="@+id/btnTakePermission"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp_4"
+            android:layout_weight="1"
+            android:text="@string/take_permission"
+            android:textSize="@dimen/sp_10" />
+
+        <TextView
+            android:id="@+id/tvWriteContactPermissionStatus"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="@dimen/sp_10"
+            tools:text="Contact Permission Granted" />
+
+    </LinearLayout>
+
+</LinearLayout>
