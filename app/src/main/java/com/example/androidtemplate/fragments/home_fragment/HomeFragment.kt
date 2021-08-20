@@ -74,8 +74,10 @@ class HomeFragment : BaseFragment() {
                             ?.navigate(R.id.action_homeFragment_to_customViewFragment)
                         12 -> view?.findNavController()
                             ?.navigate(R.id.action_homeFragment_to_usefulViewsFragment)
-                        else -> view?.findNavController()
+                        13 -> view?.findNavController()
                             ?.navigate(R.id.action_homeFragment_to_activityContractFragment)
+                        else -> view?.findNavController()
+                            ?.navigate(R.id.action_homeFragment_to_matrixFragment)
                     }
 
                 }

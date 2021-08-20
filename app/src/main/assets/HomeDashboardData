@@ -12,5 +12,6 @@
   "(Library) Dexter: Simplifies the process of requesting permissions at runtime",
   "Custom views",
   "Useful views",
-  "Activity Contract"
+  "Activity Contract",
+  "Dynamic Matrix Creation"
 ]

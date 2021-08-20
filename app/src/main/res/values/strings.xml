@@ -72,5 +72,9 @@
     <string name="pick_image">Pick Image</string>
     <string name="take_permission">Take Permissions</string>
     <string name="activity_contract">Activity Contract</string>
+    <string name="row">Row</string>
+    <string name="column">Column</string>
+    <string name="create">Create</string>
+    <string name="matrix_creation">Matrix Creation</string>
 
 </resources>

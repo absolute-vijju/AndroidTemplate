@@ -122,6 +122,14 @@
             app:launchSingleTop="true"
             app:popEnterAnim="@anim/slide_in_left"
             app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_homeFragment_to_matrixFragment"
+            app:destination="@id/matrixFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:launchSingleTop="true"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
     </fragment>
 
     <fragment
@@ -205,5 +213,10 @@
         android:name="com.example.androidtemplate.fragments.activity_contract.ActivityContractFragment"
         android:label="@string/activity_contract"
         tools:layout="@layout/fragment_activity_contract" />
+    <fragment
+        android:id="@+id/matrixFragment"
+        android:name="com.example.androidtemplate.fragments.matrix.MatrixFragment"
+        android:label="@string/matrix_creation"
+        tools:layout="@layout/fragment_matrix" />
 
 </navigation>
